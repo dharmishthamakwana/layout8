@@ -17,7 +17,7 @@ class _Screen8State extends State<Screen8> {
             Container(
               height: 200,
               width: double.infinity,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.black,
               ),
               child: Column(
@@ -25,7 +25,7 @@ class _Screen8State extends State<Screen8> {
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Row(
-                      children: [
+                      children: const [
                         Icon(
                           Icons.arrow_back,
                           color: Colors.white,
@@ -57,7 +57,7 @@ class _Screen8State extends State<Screen8> {
                     ),
                   ),
                   Column(
-                    children: [
+                    children: const [
                       Icon(
                         Icons.account_circle_rounded,
                         color: Colors.white,
@@ -88,7 +88,7 @@ class _Screen8State extends State<Screen8> {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Row(
@@ -97,7 +97,7 @@ class _Screen8State extends State<Screen8> {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Column(
-                    children: [
+                    children: const [
                       Text(
                         "1.5K",
                         style: TextStyle(
@@ -108,15 +108,17 @@ class _Screen8State extends State<Screen8> {
                       SizedBox(
                         height: 5,
                       ),
-                      Text("Posts",
-                          style: TextStyle(color: Colors.black, fontSize: 12)),
+                      Text(
+                        "Posts",
+                        style: TextStyle(color: Colors.black, fontSize: 12),
+                      ),
                     ],
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Column(
-                    children: [
+                    children: const [
                       Text(
                         "2.5K",
                         style: TextStyle(
@@ -127,15 +129,17 @@ class _Screen8State extends State<Screen8> {
                       SizedBox(
                         height: 5,
                       ),
-                      Text("Followers",
-                          style: TextStyle(color: Colors.black, fontSize: 12)),
+                      Text(
+                        "Followers",
+                        style: TextStyle(color: Colors.black, fontSize: 12),
+                      ),
                     ],
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Column(
-                    children: [
+                    children: const [
                       Text(
                         "10K",
                         style: TextStyle(
@@ -146,15 +150,17 @@ class _Screen8State extends State<Screen8> {
                       SizedBox(
                         height: 5,
                       ),
-                      Text("Comments",
-                          style: TextStyle(color: Colors.black, fontSize: 12)),
+                      Text(
+                        "Comments",
+                        style: TextStyle(color: Colors.black, fontSize: 12),
+                      ),
                     ],
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Column(
-                    children: [
+                    children: const [
                       Text(
                         "1.2K",
                         style: TextStyle(
@@ -165,8 +171,10 @@ class _Screen8State extends State<Screen8> {
                       SizedBox(
                         height: 5,
                       ),
-                      Text("Following",
-                          style: TextStyle(color: Colors.black, fontSize: 12)),
+                      Text(
+                        "Following",
+                        style: TextStyle(color: Colors.black, fontSize: 12),
+                      ),
                     ],
                   ),
                 ),
@@ -175,13 +183,13 @@ class _Screen8State extends State<Screen8> {
             Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-                Align(
+                const Align(
                   alignment: Alignment.centerLeft,
                   child: Padding(
-                    padding: const EdgeInsets.only(left: 60),
+                    padding: EdgeInsets.only(left: 60),
                     child: Text(
                       "Photos",
                       style: TextStyle(
@@ -191,7 +199,7 @@ class _Screen8State extends State<Screen8> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Padding(
@@ -204,8 +212,8 @@ class _Screen8State extends State<Screen8> {
                     ),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        FlutterLogo(size: 50),
+                      children: const [
+                        FlutterLogo(size: 60),
                         FlutterLogo(size: 50),
                         FlutterLogo(size: 50),
                         FlutterLogo(size: 50),
@@ -218,13 +226,14 @@ class _Screen8State extends State<Screen8> {
             Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-                Align(
+                const Align(
                   alignment: Alignment.centerLeft,
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 60),
+                  child:
+                  Padding(
+                    padding: EdgeInsets.only(left: 60),
                     child: Text(
                       "Post",
                       style: TextStyle(
@@ -234,26 +243,26 @@ class _Screen8State extends State<Screen8> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Row(
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(
+                    const Padding(
+                      padding: EdgeInsets.only(
                         left: 60,
                       ),
                       child: Icon(
                         Icons.account_circle,
-                        size: 40,
-                        color: Colors.blue,
+                        size: 50,
+                        color: Colors.black,
                       ),
                     ),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
+                      children: const [
                         Text(
-                          "dharmishtha makwana posted a photo",
+                          "    dharmishtha makwana posted a photo",
                           style: TextStyle(fontSize: 12),
                         ),
                         Text(
@@ -272,14 +281,14 @@ class _Screen8State extends State<Screen8> {
                 height: 130,
                 width: double.infinity,
                 decoration: BoxDecoration(
-                  color: Colors.grey.shade500,
+                  color: Colors.grey.shade400,
                   borderRadius: BorderRadius.circular(2),
                 ),
               ),
             ),
           ],
         ),
-        backgroundColor: Colors.grey.shade100,
+        // backgroundColor: Colors.grey.shade100,
       ),
     );
   }
